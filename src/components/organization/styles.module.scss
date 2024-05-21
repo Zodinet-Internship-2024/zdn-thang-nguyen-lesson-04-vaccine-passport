@@ -1,0 +1,20 @@
+@import "../../assets//scss/variables";
+
+.organization {
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn chữ giữa theo chiều dọc */
+
+  &__image {
+    margin-right: 8px; /* Khoảng cách 8px với phần tử bên phải */
+  }
+  &__name {
+    flex-grow: 1; /* Đảm bảo phần tử này chiếm hết phần còn lại của flex container */
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: normal;
+    line-height: 100%;
+    width: 5rem;
+    color: $primary_blue-ink;
+  }
+}

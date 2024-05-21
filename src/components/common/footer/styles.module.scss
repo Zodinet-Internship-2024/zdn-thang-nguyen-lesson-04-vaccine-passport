@@ -1,0 +1,73 @@
+@import "../../../assets/scss/variables";
+@import "../../../assets/scss/reponsive";
+
+.footer {
+  background-color: $primary_purple;
+  color: $neutral-white;
+  padding: 2.5rem 7.5rem;
+
+  @include mobile {
+    padding: 2.5rem 1rem;
+  }
+
+  &__descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include mobile {
+      display: block;
+    }
+
+    .content {
+      flex: 1 1 1;
+      box-sizing: border-box;
+      @include mobile {
+        flex: 1 1 100%;
+      }
+    }
+    .content {
+      &__text {
+        display: flex;
+        margin-bottom: 0.5rem;
+        align-items: center;
+
+        p {
+          padding-left: 0.15rem;
+          font-size: 1rem;
+        }
+      }
+    }
+    .follow {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-left: 1rem;
+      }
+      @include mobile {
+        order: -1;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__organizations {
+    display: flex;
+    gap: 2rem;
+    padding: 0.9rem 0;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2.5rem;
+    border-top: 1px solid #ccc;
+
+    p {
+      padding: 0.6rem;
+      border-radius: 10px;
+      border: 1px $neutral-white solid;
+    }
+  }
+}

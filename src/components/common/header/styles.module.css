@@ -1,0 +1,21 @@
+.header {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 7.5rem 1.25rem 7.5rem;
+  height: 5rem;
+}
+.header__organizations {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.header__links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.header__links p {
+  font-size: 1.125rem;
+  color: #2F3492;
+}/*# sourceMappingURL=styles.module.css.map */

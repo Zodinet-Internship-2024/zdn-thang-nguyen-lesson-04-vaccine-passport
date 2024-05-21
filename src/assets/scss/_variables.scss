@@ -1,0 +1,20 @@
+//color
+$primary_blue-ink: #2F3492;
+$primary_purple: #8B48D7;
+$neutral-white: hsl(0, 0%, 100%);
+$linear-1: linear-gradient(to right, #EB1E68, #FC6D05);
+
+//font-family
+$font-family_Space-Mono: 'Space Mono', monospace;
+$weight_700: 700;
+
+//font-size
+$font-size-16: 16px;
+
+//Global styles
+@mixin global-styles {
+    font-family: $font-family_Space-Mono;
+    box-sizing: border-box;
+    margin: 0;
+    font-size: $font-size-16;
+}
